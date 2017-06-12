@@ -1,8 +1,6 @@
-sum = 0
-for value in range(1,1000):
-    if value % 5 == 0:
-        sum += value
-    elif value % 3 == 0:
-        sum += value
+target = 999
+def sumDivisibleBy(n):
+    p = target / n
+    return n * (p * (p + 1)) / 2
 
-print sum
+print sumDivisibleBy(3) + sumDivisibleBy(5) - sumDivisibleBy(15)
