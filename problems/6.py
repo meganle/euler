@@ -1,9 +1,6 @@
 def problem6(n):
-    sumOfSquares = 0
-    sum = 0
-    for x in range(1, n+1):
-        sumOfSquares += x * x
-        sum += x
-    return (sum * sum) - sumOfSquares
+    nsum = (n*(n+1))/2
+    nsum_sq = ((2*n+1)*(n+1)*n)/6
+    return nsum**2 - nsum_sq
 
 print problem6(100)
